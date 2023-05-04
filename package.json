@@ -5,7 +5,7 @@
   "main": "index.js",
   "author": "",
   "license": "Apache-2.0",
-  "bin": "node index.js",
+  "bin": "./index.js",
   "scripts": {
     "start": "node index.js"
   },

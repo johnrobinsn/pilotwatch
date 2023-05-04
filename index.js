@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 // use express to write a server
 const path = require('path');
 const fs = require('fs');
