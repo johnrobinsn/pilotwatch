@@ -1,6 +1,6 @@
 # PilotWatch
 
-PilotWatch is a small logging proxy server written in node.js for intercepting and logging code completion requests from Copilot.
+PilotWatch is a small logging proxy server written in node.js for intercepting and logging code completion requests from Github's Copilot.
 
 ## Run the PilotWatch Proxy
 Assuming you have node.js properly installed the following command will download and run the PilotWatch proxy server on port 3000 and log all code completion requests to a sub-directory called "data" in the current working directory.
@@ -25,7 +25,7 @@ Add the following lines to that file.
 ```
 _For other platforms, Please refer to the VSCode documentation._
 
-Now as you use copilot normally you should see json files being created in a subdirectory called "data" in the current working directory for PilotWatch.
+Now as you use copilot normally you should see JSON files being created in a subdirectory called "data" in the current working directory for PilotWatch.
 
 Each one of these JSON files represents a separate Copilot code completion request to the Copilot backend.  They will each look something like this example:
 
@@ -74,7 +74,7 @@ Each one of these JSON files represents a separate Copilot code completion reque
 }
 ```
 
-You can also point your browser to the PilotWatch proxy to see a list of the captures and to visualize any of the captures just enter the following into your browser on the machine that is running PilotWatch.
+You can also point your browser to the PilotWatch proxy to see a list of the captures and to visualize any of the captures. Just enter the following URL into your browser on the machine that is running PilotWatch.
 
 ```
 http://localhost:3000
@@ -98,7 +98,7 @@ optional arguments:
 
 ## Download PilotWatch Code and Run Locally
 
-For convenience I'd recommend using the npx path to running PilotWatch described below.  But if you'd like to modify PilotWatch or contribute you can clone the repo from github and run the proxy from your own sandbox.
+For convenience I'd recommend using the npx command to run PilotWatch as described above.  But if you'd like to modify PilotWatch or contribute to it you can clone the repo from github and run the proxy from your own sandbox.
 
 ```bash
 git clone https://github.com/johnrobinsn/pilotwatch.git
