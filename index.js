@@ -8,8 +8,8 @@ const url = require('url');
 const { v4: uuidv4 } = require('uuid');
 const express = require('express');
 const log = require('loglevel');
-
 const showdown   = require('showdown');
+
 const converter = new showdown.Converter();
 
 const app = express();
@@ -223,7 +223,7 @@ args = parser.parse_args();
 
 log.setLevel((args.log=="INFO")?log.levels.INFO:log.levels.ERROR);
 
-args.data = path.resolve(__dirname, (args.data=='')?'data':args.data);
+args.data = path.resolve(process.cwd(), (args.data=='')?'data':args.data);
 fs.mkdirSync(args.data, {recursive:true})
 
 console.log("Logging Copilot Completions to directory: ", args.data);
