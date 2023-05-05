@@ -188,7 +188,8 @@ app.get('/view/:name', (req, res) => {
         else {
             const completionObject = JSON.parse(data);
             let h = '';
-            h += `<head><link rel="stylesheet" href="//highlightjs.org/static/demo/styles/atom-one-dark-reasonable.css">`;
+            h += `<head><title>Copilot Completion</title>`;
+            h += `<link rel="stylesheet" href="//highlightjs.org/static/demo/styles/atom-one-dark-reasonable.css">`;
             h += `<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>`;
             h += `<script>hljs.highlightAll();</script>`;
             h += `</head><body>`;
