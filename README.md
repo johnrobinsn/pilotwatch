@@ -3,7 +3,7 @@
 PilotWatch is a small logging proxy server written in node.js for intercepting and logging code completion requests from Copilot.
 
 ## Run the PilotWatch Proxy
-Assuming you have node.js properly installed the following command will run the proxy server on port 3000 and log requests to a sub-directory called "data" in the current working directory.
+Assuming you have node.js properly installed the following command will download and run the PilotWatch proxy server on port 3000 and log all code completion requests to a sub-directory called "data" in the current working directory.
 
 ```bash
 npx --yes github:johnrobinsn/pilotwatch
