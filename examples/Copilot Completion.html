@@ -1,0 +1,96 @@
+
+<!-- saved from url=(0086)http://localhost:3000/view/20230505194816096-ead1bdbb-8bb1-4b17-b4d7-1245df3ae066.json -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Copilot Completion</title><link rel="stylesheet" href="./Copilot Completion_files/atom-one-dark-reasonable.css"><script src="./Copilot Completion_files/highlight.min.js"></script><script>hljs.highlightAll();</script></head><body data-new-gr-c-s-check-loaded="14.1107.0" data-gr-ext-installed=""><h2 id="completion">Completion</h2>
+<p>Timestamp: 20230505194816096</p>
+<p>Completion ID: ead1bdbb-8bb1-4b17-b4d7-1245df3ae066</p>
+<p>Prompt:</p>
+<pre><code class="python language-python hljs"><span class="hljs-comment"># Path: test.py</span>
+<span class="hljs-comment"># function to calculate the taylor series of sin(x) and cos(x)</span>
+<span class="hljs-keyword">def</span> 
+</code></pre>
+<p>Completion Choice 0:</p>
+<pre><code class="python language-python hljs">sin_cos(x, n):
+    <span class="hljs-comment"># initialize the sum</span>
+    <span class="hljs-built_in">sum</span> = <span class="hljs-number">0.0</span>
+    <span class="hljs-comment"># loop over the first n terms in the sum</span>
+    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(n):
+        <span class="hljs-comment"># calculate the ith term</span>
+        term = ((-<span class="hljs-number">1</span>)**i)*(x**(<span class="hljs-number">2</span>*i+<span class="hljs-number">1</span>))/math.factorial(<span class="hljs-number">2</span>*i+<span class="hljs-number">1</span>)
+        <span class="hljs-comment"># add the ith term to the sum</span>
+        <span class="hljs-built_in">sum</span> += term
+    <span class="hljs-comment"># return the sum</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">sum</span>
+</code></pre>
+<p>Completion Choice 1:</p>
+<pre><code class="python language-python hljs">sin_cos(x, n):
+    <span class="hljs-comment"># initialize the sum to 0</span>
+    <span class="hljs-built_in">sum</span> = <span class="hljs-number">0</span>
+    <span class="hljs-comment"># loop over the number of terms in the series</span>
+    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(n):
+        <span class="hljs-comment"># calculate the numerator</span>
+        num = (-<span class="hljs-number">1</span>)**i * x**(<span class="hljs-number">2</span>*i + <span class="hljs-number">1</span>)
+        <span class="hljs-comment"># calculate the denominator</span>
+        den = factorial(<span class="hljs-number">2</span>*i + <span class="hljs-number">1</span>)
+        <span class="hljs-comment"># add the term to the sum</span>
+        <span class="hljs-built_in">sum</span> += num / den
+    <span class="hljs-comment"># return the sum</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">sum</span>
+</code></pre>
+<p>Completion Choice 2:</p>
+<pre><code class="python language-python hljs">sin_cos(x, n):
+    <span class="hljs-comment"># initialize the sum</span>
+    <span class="hljs-built_in">sum</span> = <span class="hljs-number">0.0</span>
+    <span class="hljs-comment"># loop over the first n terms in the series</span>
+    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(n):
+        <span class="hljs-comment"># calculate the ith term in the series</span>
+        term = ((-<span class="hljs-number">1</span>)**i)*(x**(<span class="hljs-number">2</span>*i+<span class="hljs-number">1</span>))/math.factorial(<span class="hljs-number">2</span>*i+<span class="hljs-number">1</span>)
+        <span class="hljs-comment"># add the term to the sum</span>
+        <span class="hljs-built_in">sum</span> += term
+    <span class="hljs-comment"># return the sum</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">sum</span>
+</code></pre>
+<p><em>No Suffix Provided</em></p>
+<h2 id="completionobject">Completion Object</h2>
+<pre><code class="json language-json hljs"><span class="hljs-punctuation">{</span>
+  <span class="hljs-attr">"timestamp"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"20230505194816096"</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">"completionid"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"ead1bdbb-8bb1-4b17-b4d7-1245df3ae066"</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">"request"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+    <span class="hljs-attr">"prompt"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"# Path: test.py\n# function to calculate the taylor series of sin(x) and cos(x)\ndef "</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-attr">"suffix"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">""</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-attr">"max_tokens"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">500</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-attr">"temperature"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0.2</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-attr">"top_p"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">1</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-attr">"n"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">3</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-attr">"stop"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
+      <span class="hljs-string">"\ndef "</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-string">"\nclass "</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-string">"\nif "</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-string">"\n\n#"</span>
+    <span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-attr">"stream"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span>
+    <span class="hljs-attr">"extra"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+      <span class="hljs-attr">"language"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"python"</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">"next_indent"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">"trim_by_indentation"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">"prompt_tokens"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">28</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">"suffix_tokens"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span>
+    <span class="hljs-punctuation">}</span>
+  <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">"responseHeaders"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+    <span class="hljs-attr">"azureml-model-deployment"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xcfc31672b2a6"</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-attr">"content-security-policy"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"default-src 'none'; sandbox"</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-attr">"content-type"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"text/event-stream"</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-attr">"openai-processing-ms"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"289.6858"</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-attr">"strict-transport-security"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"max-age=31536000"</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-attr">"x-request-id"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"41af5a31-6a5c-4787-8d67-d2c8c50fbb37"</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-attr">"date"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"Fri, 05 May 2023 19:48:15 GMT"</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-attr">"connection"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"close"</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-attr">"transfer-encoding"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"chunked"</span>
+  <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">"response"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
+    <span class="hljs-string">"sin_cos(x, n):\n    # initialize the sum\n    sum = 0.0\n    # loop over the first n terms in the sum\n    for i in range(n):\n        # calculate the ith term\n        term = ((-1)**i)*(x**(2*i+1))/math.factorial(2*i+1)\n        # add the ith term to the sum\n        sum += term\n    # return the sum\n    return sum"</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-string">"sin_cos(x, n):\n    # initialize the sum to 0\n    sum = 0\n    # loop over the number of terms in the series\n    for i in range(n):\n        # calculate the numerator\n        num = (-1)**i * x**(2*i + 1)\n        # calculate the denominator\n        den = factorial(2*i + 1)\n        # add the term to the sum\n        sum += num / den\n    # return the sum\n    return sum"</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-string">"sin_cos(x, n):\n    # initialize the sum\n    sum = 0.0\n    # loop over the first n terms in the series\n    for i in range(n):\n        # calculate the ith term in the series\n        term = ((-1)**i)*(x**(2*i+1))/math.factorial(2*i+1)\n        # add the term to the sum\n        sum += term\n    # return the sum\n    return sum"</span>
+  <span class="hljs-punctuation">]</span>
+<span class="hljs-punctuation">}</span>
+</code></pre></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
