@@ -41,11 +41,10 @@ function generateMarkdown(completionObject) {
     const suffix = completionObject.suffix;
     const choiceArray = completionObject.response;
 
-    let md = '# Completion Summary\n\n';
+    let md = '## Completion\n\n';
     md += `Timestamp: ${completionObject.timestamp}\n\n`;
     md += `Completion ID: ${completionObject.completionid}\n\n`;
 
-    md += "## Completion"
     if (!prompt)
         md += '_No Prompt Provided_\n';
     else
@@ -54,7 +53,7 @@ function generateMarkdown(completionObject) {
         md += '_No Choices Provided_\n';
     else {
         for (let i in choiceArray) {
-            md += `Choice ${i}:\n${cb}${lang}\n${choiceArray[i]}\n${cb}\n`;
+            md += `Completion Choice ${i}:\n${cb}${lang}\n${choiceArray[i]}\n${cb}\n`;
         }
     }
     if (!suffix)
@@ -230,6 +229,4 @@ console.log("Logging Copilot Completions to directory: ", args.data);
 
 // start the server
 app.listen(port, () => console.log(`pilotwatch listening on port ${args.port}!`));
-// function to generate a fibonacci sequence
-// function fibonacci(n) {
-//     if (n <= 1) return 1;
+
