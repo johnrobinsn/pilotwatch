@@ -174,8 +174,8 @@ app.get('/', (req, res) => {
       }
     });
   }); 
-// 
 
+// handle routes
 app.get('/view/:name', (req, res) => {
     // read file
     const fname = path.join(args.data, req.params.name)
